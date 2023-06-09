@@ -6,6 +6,8 @@ Objectif :
 lien :
 - http://dwarves.iut-fbleau.fr/~proal/PHP/SAE2.02/ci/index.php/user/login
 
+- !!! Ce lien n'est pas connecté en temps réel avec les différents fichiers que vous pourvoir voir ici. S'il n'est pas à jour au moment ou vous le consultez, il le sera plus tard dans la journée.
+
 pour avoir accès aux tables :
 - id:  ***
 - mdp: ***
