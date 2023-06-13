@@ -49,10 +49,18 @@ class User extends CI_Controller {
 				if(password_verify($password,$hash)){
 					$this->load->library('session');
 					$this->session->set_userdata('logged',$this->model_user->info($login));
-					redirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+					redirect('/consulter/profil');
 				} else {
-					echo 'T\'ES NUL!';
+					$erreur="Login credentials invalid";
+					$this->load->view('layout/header');
+					$this->load->view('login',['erreur'=>$erreur]);
+					$this->load->view('layout/footer');
 				}
+			} else {
+				$erreur="Login credentials invalid";
+				$this->load->view('layout/header');
+				$this->load->view('login',['erreur'=>$erreur]);
+				$this->load->view('layout/footer');
 			}
 		}
 	}

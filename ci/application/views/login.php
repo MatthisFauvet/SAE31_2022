@@ -1,5 +1,9 @@
 <?=validation_errors(); ?>
 <?=form_open('user/login')?>
+<?php if (isset($erreur)) {
+    echo $erreur;
+}
+?>
 <div class="grid">
     <label for="login">Login
     <input type="login" id="login" name="login" placeholder="Login" value="<?=set_value('login')?>" required>

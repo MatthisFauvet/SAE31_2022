@@ -6,14 +6,14 @@
 
 	<!-- Markup example 1: input is inside label -->
 	<label for="prenom">
-	Prénom
-	<input type="text" id="prenom" name="prenom" placeholder="Prénom" value="<?=set_value('prenom')?>"required>
+    Prénom
+    <input type="text" id="prenom" name="prenom" placeholder="Prénom" value="<?=set_value('prenom')?>"required>
 	</label>
 
-	    <label for="nom">
-	    Nom 
-	    <input type="text" id="nom" name="nom" placeholder="nom" value="<?=set_value('nom')?>" required>
-	    </label>
+	<label for="nom">
+	  Nom 
+	  <input type="text" id="nom" name="nom" placeholder="Nom" value="<?=set_value('nom')?>" required>
+	</label>
     </div>
     <div>
     <label for="login">
@@ -34,6 +34,8 @@
 
 </div>
   <!-- Button -->
-  <button type="submit">Submit</button>
-
+  <div class="grid">
+    <button type="submit">Submit</button>
+      <?=anchor('/user/login',"Vous avez déjà un compte ?",['role'=>'button'])?>
+  </div>
 </form>

@@ -30,7 +30,7 @@ class Model_user extends CI_Model{
         $tab=array(
             'prenom' => $query->row()->prenom,
             'nom' => $query->row()->nom,
-            'email' => $email,
+            'email' => $query->row()->email,
             'login' => $login,
             'logged_in' => TRUE
         );
